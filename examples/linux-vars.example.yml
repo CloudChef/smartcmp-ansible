@@ -1,0 +1,24 @@
+# Match node names and fields to the original catalog; use the smallest valid disk size supported by the image.
+# Use existing FC pool, image, datastore, network and subnet IDs without modifying the blueprint.
+# FC inherits the system disk size from the image; omit systemDisk.size below instead of requesting provisioning-time expansion.
+cmp_catalog_id: replace-with-linux-catalog-id
+cmp_business_group_id: replace-with-business-group-id
+cmp_request_name: ansible-linux-example
+cmp_resource_specs:
+- node: Compute
+  type: cloudchef.nodes.Compute
+  resource_pool_id: replace-with-resource-pool-id
+  spec:
+    computeProfileId: replace-with-minimum-valid-profile-id
+    flavorId: replace-with-flavor-id
+    logicTemplateId: replace-with-linux-logical-template-id
+    templateId: replace-with-cloud-image-id
+    networkId: replace-with-network-id
+    subnetId: replace-with-subnet-id
+    systemDisk:
+      size: 50
+      is_system_disk: true
+      volume_type: replace-with-storage-type-id
+      disk_policy: type
+    credentialUser: root
+    credentialPassword: '{{ vault_guest_password }}'

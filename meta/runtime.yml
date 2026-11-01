@@ -1,0 +1,13 @@
+requires_ansible: '>=2.21.0'
+action_groups:
+  smartcmp:
+    - catalog_info
+    - reference_info
+    - catalog_request
+    - request_info
+    - task_info
+    - resource_info
+    - resource_action_info
+    - resource_action
+    - vm_power
+    - deployment

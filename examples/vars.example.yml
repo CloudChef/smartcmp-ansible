@@ -1,0 +1,15 @@
+---
+cmp_base_url: https://cmp.example.invalid
+cmp_username: automation-user
+# Supply cmp_password through Ansible Vault or the runtime environment.
+cmp_business_group_id: replace-with-business-group-id
+cmp_catalog_id: replace-with-catalog-id
+cmp_request_name: ansible-example
+cmp_resource_specs:
+  - node: replace-with-catalog-node
+    type: replace-with-catalog-node-type
+    resource_pool_id: replace-with-resource-pool-id
+    spec:
+      computeProfileId: replace-with-minimum-valid-profile-id
+      logicTemplateId: replace-with-logical-template-id
+      # Supply template, network and storage fields according to the catalog contract.

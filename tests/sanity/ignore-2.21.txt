@@ -1,0 +1,12 @@
+# Distributed independently under Apache-2.0; not submitted to the Ansible community.
+# Exclude only the GPLv3 header check; keep all other checks enabled.
+plugins/modules/catalog_info.py validate-modules:missing-gplv3-license
+plugins/modules/catalog_request.py validate-modules:missing-gplv3-license
+plugins/modules/deployment.py validate-modules:missing-gplv3-license
+plugins/modules/reference_info.py validate-modules:missing-gplv3-license
+plugins/modules/request_info.py validate-modules:missing-gplv3-license
+plugins/modules/resource_action.py validate-modules:missing-gplv3-license
+plugins/modules/resource_action_info.py validate-modules:missing-gplv3-license
+plugins/modules/resource_info.py validate-modules:missing-gplv3-license
+plugins/modules/task_info.py validate-modules:missing-gplv3-license
+plugins/modules/vm_power.py validate-modules:missing-gplv3-license

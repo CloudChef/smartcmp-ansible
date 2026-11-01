@@ -1,0 +1,20 @@
+namespace: cloudchef
+name: smartcmp
+version: 0.1.0
+readme: README.md
+authors:
+  - CloudChef
+description: Provision and manage cloud resources through existing SmartCMP service catalogs.
+license:
+  - Apache-2.0
+tags:
+  - cloud
+  - infrastructure
+repository: https://github.com/cc-fangli/smartcmp-ansible
+build_ignore:
+  - .git
+  - .superpowers
+  - tests
+  - '*.tar.gz'
+  - __pycache__
+  - .pytest_cache
